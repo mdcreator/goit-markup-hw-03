@@ -25,7 +25,7 @@ body {
   list-style: none;
 }
 
-/* Futer */
+/* Header */
 .page-header {
   outline: 1px solid var(--primery-text-color);
 }
@@ -99,7 +99,11 @@ body {
 
 /* section */
 .section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -152,7 +156,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.poject-list .project {
+.project-list .project {
   text-decoration: none;
 }
 
