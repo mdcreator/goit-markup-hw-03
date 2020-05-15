@@ -36,7 +36,7 @@ body {
   width: 1230px;
 }
 
-.logo-link {
+.link-header {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -46,7 +46,7 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.logo {
+.logo-header {
   color: var(--title-text-color);
 }
 
@@ -262,9 +262,28 @@ body {
 }
 
 /* Futer */
+.link-futer,
+.logo-futer {
+  font-family: Raleway;
+  font-style: 400;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.link-futer {
+  color: var(--accent-color);
+}
+
+.logo-futer {
+  color: var(--secondary-accent-color);
+}
+
 .address {
   font-style: normal;
 }
+
 .address .info {
   color: var(--primery-text-color);
   text-decoration: none;
