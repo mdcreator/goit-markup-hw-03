@@ -17,7 +17,7 @@
   <body>
     <!--Шапка сайта-->
     <header class="page-header">
-      <nav class="container">
+      <nav class="container main-nav">
         <a class="link-header" href="./index.html">
           Web <span class="logo-header"> Studio </span>
         </a>
@@ -30,20 +30,22 @@
           <li class="item"><a href="#" class="link"> Контакты </a></li>
         </ul>
       </nav>
-      <ul class="contacts-link list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact">
-            <img src="./images/envelope.svg" alt="e-mail" />
-            info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="contact">
-            <img src="./images/smartphone.svg" alt="номер телефона" />
-            +38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      <div class="container">
+        <ul class="contacts-link list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="contact">
+              <img src="./images/envelope.svg" alt="e-mail" />
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="contact">
+              <img src="./images/smartphone.svg" alt="номер телефона" />
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -60,32 +62,44 @@
         <div class="container">
           <h2 class="section-title">Преимущества</h2>
           <ul class="feature-list list">
-            <li>
-              <img src="./images/antenna.svg" alt="Антенна" />
+            <li class="feature-item">
+              <img
+                src="./images/antenna.svg"
+                class="feature-pic"
+                alt="Антенна"
+              />
               <h3 class="title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
-              <img src="./images/clock.svg" alt="Часы" />
+            <li class="feature-item">
+              <img src="./images/clock.svg" class="feature-pic" alt="Часы" />
               <h3 class="title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
-              <img src="./images/diagram.svg" alt="Диаграмма" />
+            <li class="feature-item">
+              <img
+                src="./images/diagram.svg"
+                class="feature-pic"
+                alt="Диаграмма"
+              />
               <h3 class="title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
-              <img src="./images/astronaut.svg" alt="Астронавт" />
+            <li class="feature-item">
+              <img
+                src="./images/astronaut.svg"
+                class="feature-pic"
+                alt="Астронавт"
+              />
               <h3 class="title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -97,19 +111,19 @@
       </section>
 
       <!--Чем мы занимаемся-->
-      <section class="section">
+      <section class="section projects">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="project-list list">
-            <li>
+            <li class="project-item">
               <img src="./images/laptop.jpg" alt="Ноутбук" width="380" />
               <h3 class="title">Десктопные приложения</h3>
             </li>
-            <li>
+            <li class="project-item">
               <img src="./images/smartphone.jpg" alt="Смартфон" width="380" />
               <h3 class="title">Мобильные приложения</h3>
             </li>
-            <li>
+            <li class="project-item">
               <img src="./images/computer.jpg" alt="Компьютер" width="380" />
               <h3 class="title">Дизайнерские решения</h3>
             </li>
@@ -122,109 +136,117 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
-            <li>
-              <img src="./images/img1.jpg" alt="John Smith" />
+            <li class="team-card">
+              <img src="./images/img1.jpg" class="team-pic" alt="John Smith" />
               <h3 class="title">John Smith</h3>
               <p class="position">Product Designer</p>
-              <ul class="list">
-                <li>
-                  <a href="#"
+              <ul class="social-list list">
+                <li class="social-item">
+                  <a href="#" class="social-link"
                     ><img src="./images/instagram.svg" alt="Instagram profile"
                   /></a>
                 </li>
-                <li>
-                  <a href="#"
+                <li class="social-item">
+                  <a href="#" class="social-link"
                     ><img src="./images/Vector.svg" alt="Twitter profile"
                   /></a>
                 </li>
-                <li>
-                  <a href="#"
+                <li class="social-item">
+                  <a href="#" class="social-link"
                     ><img src="./images/Facebook.svg" alt="Facebook profile"
                   /></a>
                 </li>
-                <li>
-                  <a href="#"
+                <li class="social-item">
+                  <a href="#" class="social-link"
                     ><img src="./images/LinkedIn.svg" alt="LinkedIn profile"
                   /></a>
                 </li>
               </ul>
             </li>
-            <li>
-              <img src="./images/img.jpg" alt="Marta Stewart" />
+            <li class="team-card">
+              <img
+                src="./images/img.jpg"
+                class="team-pic"
+                alt="Marta Stewart"
+              />
               <h3 class="title">Marta Stewart</h3>
               <p class="position">Frontend Developer</p>
-              <ul class="list">
-                <li>
-                  <a href="#"
+              <ul class="social-list list">
+                <li class="social-item">
+                  <a href="#" class="social-link"
                     ><img src="./images/instagram.svg" alt="Instagram profile"
                   /></a>
                 </li>
-                <li>
-                  <a href="#"
+                <li class="social-item">
+                  <a href="#" class="social-link"
                     ><img src="./images/Vector.svg" alt="Twitter profile"
                   /></a>
                 </li>
-                <li>
-                  <a href="#"
+                <li class="social-item">
+                  <a href="#" class="social-link"
                     ><img src="./images/Facebook.svg" alt="Facebook profile"
                   /></a>
                 </li>
-                <li>
-                  <a href="#"
+                <li class="social-item">
+                  <a href="#" class="social-link"
                     ><img src="./images/LinkedIn.svg" alt="LinkedIn profile"
                   /></a>
                 </li>
               </ul>
             </li>
-            <li>
-              <img src="./images/img3.jpg" alt="Robert Jakis" />
+            <li class="team-card">
+              <img
+                src="./images/img3.jpg"
+                class="team-pic"
+                alt="Robert Jakis"
+              />
               <h3 class="title">Robert Jakis</h3>
               <p class="position">Marketing</p>
-              <ul class="list">
-                <li>
-                  <a href="#"
+              <ul class="social-list list">
+                <li class="social-item">
+                  <a href="#" class="social-link"
                     ><img src="./images/instagram.svg" alt="Instagram profile"
                   /></a>
                 </li>
-                <li>
-                  <a href="#"
+                <li class="social-item">
+                  <a href="#" class="social-link"
                     ><img src="./images/Vector.svg" alt="Twitter profile"
                   /></a>
                 </li>
-                <li>
-                  <a href="#"
+                <li class="social-item">
+                  <a href="#" class="social-link"
                     ><img src="./images/Facebook.svg" alt="Facebook profile"
                   /></a>
                 </li>
-                <li>
-                  <a href="#"
+                <li class="social-item">
+                  <a href="#" class="social-link"
                     ><img src="./images/LinkedIn.svg" alt="LinkedIn profile"
                   /></a>
                 </li>
               </ul>
             </li>
-            <li>
-              <img src="./images/img4.jpg" alt="Martin Doe" />
+            <li class="team-card">
+              <img src="./images/img4.jpg" class="team-pic" alt="Martin Doe" />
               <h3 class="title">Martin Doe</h3>
               <p class="position">UI Designer</p>
-              <ul class="list">
-                <li>
-                  <a href=""
+              <ul class="social-list list">
+                <li class="social-item">
+                  <a href="" class="social-link"
                     ><img src="./images/instagram.svg" alt="Instagram profile"
                   /></a>
                 </li>
-                <li>
-                  <a href=""
+                <li class="social-item">
+                  <a href="" class="social-link"
                     ><img src="./images/Vector.svg" alt="Twitter profile"
                   /></a>
                 </li>
-                <li>
-                  <a href=""
+                <li class="social-item">
+                  <a href="" class="social-link"
                     ><img src="./images/Facebook.svg" alt="Facebook profile"
                   /></a>
                 </li>
-                <li>
-                  <a href=""
+                <li class="social-item">
+                  <a href="" class="social-link"
                     ><img src="./images/LinkedIn.svg" alt="LinkedIn profile"
                   /></a>
                 </li>
@@ -235,38 +257,38 @@
       </section>
 
       <!--Постоянные клиенты-->
-      <section class="section">
+      <section class="clients section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="list">
-            <li>
-              <a href="#" class="clients"
-                ><img src="./images/logo-1.svg" alt="logo"
+          <ul class="client-list list">
+            <li class="client-card">
+              <a href="#" class="link"
+                ><img src="./images/logo-1.svg" class="client-pic1" alt="logo"
               /></a>
             </li>
-            <li>
-              <a href="#" class="clients"
-                ><img src="./images/logo-2.svg" alt="logo"
+            <li class="client-card">
+              <a href="#" class="link"
+                ><img src="./images/logo-2.svg" class="client-pic2" alt="logo"
               /></a>
             </li>
-            <li>
-              <a href="#" class="clients"
-                ><img src="./images/logo-3.svg" alt="logo"
+            <li class="client-card">
+              <a href="#" class="link"
+                ><img src="./images/logo-3.svg" class="client-pic3" alt="logo"
               /></a>
             </li>
-            <li>
-              <a href="#" class="clients"
-                ><img src="./images/logo-4.svg" alt="logo"
+            <li class="client-card">
+              <a href="#" class="link"
+                ><img src="./images/logo-4.svg" class="client-pic4" alt="logo"
               /></a>
             </li>
-            <li>
-              <a href="#" class="clients"
-                ><img src="./images/logo-5.svg" alt="logo"
+            <li class="client-card">
+              <a href="#" class="link"
+                ><img src="./images/logo-5.svg" class="client-pic5" alt="logo"
               /></a>
             </li>
-            <li>
-              <a href="#" class="clients"
-                ><img src="./images/logo-6.svg" alt="logo"
+            <li class="client-card">
+              <a href="#" class="link"
+                ><img src="./images/logo-6.svg" class="client-pic6" alt="logo"
               /></a>
             </li>
           </ul>
