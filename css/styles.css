@@ -605,7 +605,7 @@ body {
 
 .exhortation-block {
   margin-left: auto;
-  width: ((100% - 30px) / 12 * 5);
+  width: calc((100% - 30px) / 12 * 5);
   justify-content: flex-end;
 }
 
